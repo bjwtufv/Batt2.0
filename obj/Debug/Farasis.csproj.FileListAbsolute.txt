@@ -1,0 +1,231 @@
+D:\Batt\Batt\bin\Batt.dll.config
+D:\Batt\Batt\bin\Batt.dll
+D:\Batt\Batt\bin\Batt.pdb
+D:\Batt\Batt\bin\EntityFramework.dll
+D:\Batt\Batt\bin\EntityFramework.SqlServer.dll
+D:\Batt\Batt\bin\Microsoft.Web.Infrastructure.dll
+D:\Batt\Batt\bin\Newtonsoft.Json.dll
+D:\Batt\Batt\bin\System.Web.Helpers.dll
+D:\Batt\Batt\bin\System.Web.Razor.dll
+D:\Batt\Batt\bin\System.Web.WebPages.Deployment.dll
+D:\Batt\Batt\bin\System.Web.WebPages.dll
+D:\Batt\Batt\bin\System.Web.WebPages.Razor.dll
+D:\Batt\Batt\bin\EntityFramework.xml
+D:\Batt\Batt\bin\EntityFramework.SqlServer.xml
+D:\Batt\Batt\bin\Microsoft.Web.Infrastructure.xml
+D:\Batt\Batt\bin\System.Web.Helpers.xml
+D:\Batt\Batt\bin\System.Web.Mvc.xml
+D:\Batt\Batt\bin\System.Web.Razor.xml
+D:\Batt\Batt\bin\System.Web.WebPages.xml
+D:\Batt\Batt\bin\System.Web.WebPages.Deployment.xml
+D:\Batt\Batt\bin\System.Web.WebPages.Razor.xml
+D:\Batt\Batt\bin\zh-Hans\EntityFramework.resources.dll
+D:\Batt\Batt\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\Batt\Batt\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\Batt\Batt\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\Batt\Batt\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\Batt\Batt\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\Batt\Batt\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\Batt\Batt\obj\Debug\Farasis.csprojResolveAssemblyReference.cache
+D:\Batt\Batt\obj\Debug\Batt.dll
+D:\Batt\Batt\obj\Debug\Batt.pdb
+D:\Batt - 副本\Batt\bin\Batt.dll.config
+D:\Batt - 副本\Batt\bin\Batt.dll
+D:\Batt - 副本\Batt\bin\Batt.pdb
+D:\Batt - 副本\Batt\bin\EntityFramework.dll
+D:\Batt - 副本\Batt\bin\EntityFramework.SqlServer.dll
+D:\Batt - 副本\Batt\bin\Microsoft.Web.Infrastructure.dll
+D:\Batt - 副本\Batt\bin\Newtonsoft.Json.dll
+D:\Batt - 副本\Batt\bin\System.Web.Helpers.dll
+D:\Batt - 副本\Batt\bin\System.Web.Razor.dll
+D:\Batt - 副本\Batt\bin\System.Web.WebPages.Deployment.dll
+D:\Batt - 副本\Batt\bin\System.Web.WebPages.dll
+D:\Batt - 副本\Batt\bin\System.Web.WebPages.Razor.dll
+D:\Batt - 副本\Batt\bin\EntityFramework.xml
+D:\Batt - 副本\Batt\bin\EntityFramework.SqlServer.xml
+D:\Batt - 副本\Batt\bin\Microsoft.Web.Infrastructure.xml
+D:\Batt - 副本\Batt\bin\System.Web.Helpers.xml
+D:\Batt - 副本\Batt\bin\System.Web.Mvc.xml
+D:\Batt - 副本\Batt\bin\System.Web.Razor.xml
+D:\Batt - 副本\Batt\bin\System.Web.WebPages.xml
+D:\Batt - 副本\Batt\bin\System.Web.WebPages.Deployment.xml
+D:\Batt - 副本\Batt\bin\System.Web.WebPages.Razor.xml
+D:\Batt - 副本\Batt\bin\zh-Hans\EntityFramework.resources.dll
+D:\Batt - 副本\Batt\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\Batt - 副本\Batt\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\Batt - 副本\Batt\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\Batt - 副本\Batt\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\Batt - 副本\Batt\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\Batt - 副本\Batt\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\Batt - 副本\Batt\obj\Debug\Farasis.csprojResolveAssemblyReference.cache
+D:\Batt - 副本\Batt\obj\Debug\Batt.dll
+D:\Batt - 副本\Batt\obj\Debug\Batt.pdb
+D:\Bat1\Batt\bin\Batt.dll.config
+D:\Bat1\Batt\bin\Batt.dll
+D:\Bat1\Batt\bin\Batt.pdb
+D:\Bat1\Batt\bin\EntityFramework.dll
+D:\Bat1\Batt\bin\EntityFramework.SqlServer.dll
+D:\Bat1\Batt\bin\Microsoft.Web.Infrastructure.dll
+D:\Bat1\Batt\bin\Newtonsoft.Json.dll
+D:\Bat1\Batt\bin\System.Web.Helpers.dll
+D:\Bat1\Batt\bin\System.Web.Razor.dll
+D:\Bat1\Batt\bin\System.Web.WebPages.Deployment.dll
+D:\Bat1\Batt\bin\System.Web.WebPages.dll
+D:\Bat1\Batt\bin\System.Web.WebPages.Razor.dll
+D:\Bat1\Batt\bin\EntityFramework.xml
+D:\Bat1\Batt\bin\EntityFramework.SqlServer.xml
+D:\Bat1\Batt\bin\Microsoft.Web.Infrastructure.xml
+D:\Bat1\Batt\bin\System.Web.Helpers.xml
+D:\Bat1\Batt\bin\System.Web.Razor.xml
+D:\Bat1\Batt\bin\System.Web.WebPages.xml
+D:\Bat1\Batt\bin\System.Web.WebPages.Deployment.xml
+D:\Bat1\Batt\bin\System.Web.WebPages.Razor.xml
+D:\Bat1\Batt\bin\zh-Hans\EntityFramework.resources.dll
+D:\Bat1\Batt\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\Bat1\Batt\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\Bat1\Batt\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\Bat1\Batt\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\Bat1\Batt\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\Bat1\Batt\obj\Debug\Farasis.csprojResolveAssemblyReference.cache
+D:\Bat1\Batt\obj\Debug\Batt.dll
+D:\Bat1\Batt\obj\Debug\Batt.pdb
+D:\Bat1\Batt\bin\System.Net.Http.Formatting.dll
+D:\Bat1\Batt\bin\System.Web.Http.dll
+D:\Bat1\Batt\bin\System.Web.Http.WebHost.dll
+D:\Bat1\Batt\bin\System.Web.Mvc.dll
+D:\Bat1\Batt\bin\System.Net.Http.Formatting.xml
+D:\Bat1\Batt\bin\System.Web.Http.xml
+D:\Bat1\Batt\bin\System.Web.Http.WebHost.xml
+D:\Bat1\Batt\bin\System.Web.Mvc.xml
+D:\Bat1\Batt\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\Bat1\Batt\bin\zh-Hans\System.Web.Http.resources.dll
+D:\Bat1\Batt\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+D:\Bat1\Batt\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\Batt\Bat2\Batt\bin\Batt.dll.config
+D:\Batt\Bat2\Batt\bin\Batt.dll
+D:\Batt\Bat2\Batt\bin\Batt.pdb
+D:\Batt\Bat2\Batt\bin\EntityFramework.dll
+D:\Batt\Bat2\Batt\bin\EntityFramework.SqlServer.dll
+D:\Batt\Bat2\Batt\bin\Microsoft.Web.Infrastructure.dll
+D:\Batt\Bat2\Batt\bin\Newtonsoft.Json.dll
+D:\Batt\Bat2\Batt\bin\System.Net.Http.Formatting.dll
+D:\Batt\Bat2\Batt\bin\System.Web.Helpers.dll
+D:\Batt\Bat2\Batt\bin\System.Web.Http.dll
+D:\Batt\Bat2\Batt\bin\System.Web.Http.WebHost.dll
+D:\Batt\Bat2\Batt\bin\System.Web.Mvc.dll
+D:\Batt\Bat2\Batt\bin\System.Web.Razor.dll
+D:\Batt\Bat2\Batt\bin\System.Web.WebPages.Deployment.dll
+D:\Batt\Bat2\Batt\bin\System.Web.WebPages.dll
+D:\Batt\Bat2\Batt\bin\System.Web.WebPages.Razor.dll
+D:\Batt\Bat2\Batt\bin\EntityFramework.xml
+D:\Batt\Bat2\Batt\bin\EntityFramework.SqlServer.xml
+D:\Batt\Bat2\Batt\bin\Microsoft.Web.Infrastructure.xml
+D:\Batt\Bat2\Batt\bin\System.Net.Http.Formatting.xml
+D:\Batt\Bat2\Batt\bin\System.Web.Helpers.xml
+D:\Batt\Bat2\Batt\bin\System.Web.Http.xml
+D:\Batt\Bat2\Batt\bin\System.Web.Http.WebHost.xml
+D:\Batt\Bat2\Batt\bin\System.Web.Mvc.xml
+D:\Batt\Bat2\Batt\bin\System.Web.Razor.xml
+D:\Batt\Bat2\Batt\bin\System.Web.WebPages.xml
+D:\Batt\Bat2\Batt\bin\System.Web.WebPages.Deployment.xml
+D:\Batt\Bat2\Batt\bin\System.Web.WebPages.Razor.xml
+D:\Batt\Bat2\Batt\bin\zh-Hans\EntityFramework.resources.dll
+D:\Batt\Bat2\Batt\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\Batt\Bat2\Batt\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\Batt\Bat2\Batt\bin\zh-Hans\System.Web.Http.resources.dll
+D:\Batt\Bat2\Batt\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+D:\Batt\Bat2\Batt\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\Batt\Bat2\Batt\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\Batt\Bat2\Batt\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\Batt\Bat2\Batt\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\Batt\Bat2\Batt\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\Batt\Bat2\Batt\obj\Debug\Batt.dll
+D:\Batt\Bat2\Batt\obj\Debug\Batt.pdb
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\Batt.dll.config
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\Batt.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\Batt.pdb
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\EntityFramework.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\EntityFramework.SqlServer.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\Microsoft.Web.Infrastructure.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\Newtonsoft.Json.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Net.Http.Formatting.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Web.Helpers.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Web.Http.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Web.Http.WebHost.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Web.Mvc.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Web.Razor.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Web.WebPages.Deployment.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Web.WebPages.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Web.WebPages.Razor.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\EntityFramework.xml
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\EntityFramework.SqlServer.xml
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\Microsoft.Web.Infrastructure.xml
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Net.Http.Formatting.xml
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Web.Helpers.xml
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Web.Http.xml
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Web.Http.WebHost.xml
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Web.Mvc.xml
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Web.Razor.xml
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Web.WebPages.xml
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Web.WebPages.Deployment.xml
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\System.Web.WebPages.Razor.xml
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\zh-Hans\EntityFramework.resources.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\zh-Hans\System.Web.Http.resources.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\obj\Debug\Farasis.csprojResolveAssemblyReference.cache
+D:\Batt\Bat2 - 副本 (2)\Batt\obj\Debug\Batt.dll
+D:\Batt\Bat2 - 副本 (2)\Batt\obj\Debug\Batt.pdb
+D:\Batt\Bat2\Batt\bin\Newtonsoft.Json.xml
+D:\Batt\Bat2\Batt\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\Batt\Bat3 - 副本\Batt\bin\Batt.dll.config
+D:\Batt\Bat3 - 副本\Batt\bin\Batt.dll
+D:\Batt\Bat3 - 副本\Batt\bin\Batt.pdb
+D:\Batt\Bat3 - 副本\Batt\bin\EntityFramework.dll
+D:\Batt\Bat3 - 副本\Batt\bin\EntityFramework.SqlServer.dll
+D:\Batt\Bat3 - 副本\Batt\bin\Microsoft.Web.Infrastructure.dll
+D:\Batt\Bat3 - 副本\Batt\bin\Newtonsoft.Json.dll
+D:\Batt\Bat3 - 副本\Batt\bin\System.Net.Http.Formatting.dll
+D:\Batt\Bat3 - 副本\Batt\bin\System.Web.Helpers.dll
+D:\Batt\Bat3 - 副本\Batt\bin\System.Web.Http.dll
+D:\Batt\Bat3 - 副本\Batt\bin\System.Web.Http.WebHost.dll
+D:\Batt\Bat3 - 副本\Batt\bin\System.Web.Mvc.dll
+D:\Batt\Bat3 - 副本\Batt\bin\System.Web.Razor.dll
+D:\Batt\Bat3 - 副本\Batt\bin\System.Web.WebPages.Deployment.dll
+D:\Batt\Bat3 - 副本\Batt\bin\System.Web.WebPages.dll
+D:\Batt\Bat3 - 副本\Batt\bin\System.Web.WebPages.Razor.dll
+D:\Batt\Bat3 - 副本\Batt\bin\EntityFramework.xml
+D:\Batt\Bat3 - 副本\Batt\bin\EntityFramework.SqlServer.xml
+D:\Batt\Bat3 - 副本\Batt\bin\Newtonsoft.Json.xml
+D:\Batt\Bat3 - 副本\Batt\bin\System.Net.Http.Formatting.xml
+D:\Batt\Bat3 - 副本\Batt\bin\System.Web.Helpers.xml
+D:\Batt\Bat3 - 副本\Batt\bin\System.Web.Http.xml
+D:\Batt\Bat3 - 副本\Batt\bin\System.Web.Http.WebHost.xml
+D:\Batt\Bat3 - 副本\Batt\bin\System.Web.Mvc.xml
+D:\Batt\Bat3 - 副本\Batt\bin\System.Web.Razor.xml
+D:\Batt\Bat3 - 副本\Batt\bin\System.Web.WebPages.xml
+D:\Batt\Bat3 - 副本\Batt\bin\System.Web.WebPages.Deployment.xml
+D:\Batt\Bat3 - 副本\Batt\bin\System.Web.WebPages.Razor.xml
+D:\Batt\Bat3 - 副本\Batt\bin\Microsoft.Web.Infrastructure.xml
+D:\Batt\Bat3 - 副本\Batt\bin\zh-Hans\EntityFramework.resources.dll
+D:\Batt\Bat3 - 副本\Batt\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\Batt\Bat3 - 副本\Batt\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\Batt\Bat3 - 副本\Batt\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\Batt\Bat3 - 副本\Batt\bin\zh-Hans\System.Web.Http.resources.dll
+D:\Batt\Bat3 - 副本\Batt\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+D:\Batt\Bat3 - 副本\Batt\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\Batt\Bat3 - 副本\Batt\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\Batt\Bat3 - 副本\Batt\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\Batt\Bat3 - 副本\Batt\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\Batt\Bat3 - 副本\Batt\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\Batt\Bat3 - 副本\Batt\obj\Debug\Farasis.csprojResolveAssemblyReference.cache
+D:\Batt\Bat3 - 副本\Batt\obj\Debug\Batt.dll
+D:\Batt\Bat3 - 副本\Batt\obj\Debug\Batt.pdb
+D:\Batt\Bat2\Batt\bin\log4net.dll
+D:\Batt\Bat2\Batt\obj\Debug\Farasis.csprojResolveAssemblyReference.cache

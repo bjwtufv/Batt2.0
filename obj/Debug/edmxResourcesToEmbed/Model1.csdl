@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BattModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="GroupId" />
+    </Key>
+    <Property Name="GroupId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GroupPermission">
+    <Key>
+      <PropertyRef Name="GroupPermissionId" />
+    </Key>
+    <Property Name="GroupPermissionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupId" Type="Int32" />
+    <Property Name="PermissionId" Type="Int32" />
+    <Property Name="Context" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="OrderDate" Type="DateTime" Precision="0" />
+    <Property Name="Fax" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ShipAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OrderTotal" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Order_User" FromRole="Order" ToRole="User" />
+    <NavigationProperty Name="Vender" Relationship="Self.FK_Order_Vender" FromRole="Order" ToRole="Vender" />
+  </EntityType>
+  <EntityType Name="Order_Details">
+    <Key>
+      <PropertyRef Name="OrderId" />
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int16" />
+  </EntityType>
+  <EntityType Name="Permission">
+    <Key>
+      <PropertyRef Name="PermissionId" />
+    </Key>
+    <Property Name="PermissionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PermissionName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Active" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="UserGroup">
+    <Key>
+      <PropertyRef Name="UserGroupId" />
+    </Key>
+    <Property Name="UserGroupId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Group" Relationship="Self.FK_UserGroup_Group" FromRole="UserGroup" ToRole="Group" />
+    <NavigationProperty Name="User" Relationship="Self.FK_UserGroup_User" FromRole="UserGroup" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Vender">
+    <Key>
+      <PropertyRef Name="VenderId" />
+    </Key>
+    <Property Name="VenderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VenderName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Contact" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Fax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_UserGroup_Group">
+    <End Role="Group" Type="Self.Group" Multiplicity="0..1" />
+    <End Role="UserGroup" Type="Self.UserGroup" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Order_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Order_Vender">
+    <End Role="Vender" Type="Self.Vender" Multiplicity="0..1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_UserGroup_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="UserGroup" Type="Self.UserGroup" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="BattEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Group" EntityType="Self.Group" />
+    <EntitySet Name="GroupPermission" EntityType="Self.GroupPermission" />
+    <EntitySet Name="Order" EntityType="Self.Order" />
+    <EntitySet Name="Order_Details" EntityType="Self.Order_Details" />
+    <EntitySet Name="Permission" EntityType="Self.Permission" />
+    <EntitySet Name="User" EntityType="Self.User" />
+    <EntitySet Name="UserGroup" EntityType="Self.UserGroup" />
+    <EntitySet Name="Vender" EntityType="Self.Vender" />
+    <AssociationSet Name="FK_UserGroup_Group" Association="Self.FK_UserGroup_Group">
+      <End Role="Group" EntitySet="Group" />
+      <End Role="UserGroup" EntitySet="UserGroup" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_User" Association="Self.FK_Order_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Vender" Association="Self.FK_Order_Vender">
+      <End Role="Vender" EntitySet="Vender" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserGroup_User" Association="Self.FK_UserGroup_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserGroup" EntitySet="UserGroup" />
+    </AssociationSet>
+    <EntitySet Name="Products" EntityType="BattModel.Products" />
+    <AssociationSet Name="FK_Products_Vender" Association="BattModel.FK_Products_Vender">
+      <End Role="Vender" EntitySet="Vender" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Dist" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Farasis" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="AcctNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="VenderId" Type="Int32" />
+    <NavigationProperty Name="Vender" Relationship="BattModel.FK_Products_Vender" FromRole="Products" ToRole="Vender" />
+  </EntityType>
+  <Association Name="FK_Products_Vender">
+    <End Type="BattModel.Vender" Role="Vender" Multiplicity="0..1" />
+    <End Type="BattModel.Products" Role="Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vender">
+        <PropertyRef Name="VenderId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="VenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

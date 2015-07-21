@@ -1,0 +1,26 @@
+﻿<div class="modal-header">
+    <h4 class="modal-title">
+        <span class="glyphicon glyphicon-star"></span>
+        VenderMaintenance
+    </h4>
+</div>
+<div class="modal-body">
+    <ng-form name="nameDialog" novalidate role="form" class="">
+        <label class="control-label required">Vender</label>
+        <input type="text" class="form-control" id="venderName" ng-model="data.VenderName" ng-keyup="hitEnter($event)" required>
+        <label class="control-label">Address</label>
+        <input type="text" class="form-control" id="venderAddress" ng-model="data.Address" ng-keyup="hitEnter($event)">
+        <label class="control-label">Contact</label>
+        <input type="text" class="form-control" id="venderContact" ng-model="data.Contact" ng-keyup="hitEnter($event)">
+        <label class="control-label">Phone</label>
+        <input type="text" class="form-control" id="venderPhone" ng-model="data.Phone" ng-keyup="hitEnter($event)">
+        <label class="control-label">Fax</label>
+        <input type="text" class="form-control" id="venderFax" ng-model="data.Fax" ng-keyup="hitEnter($event)">   
+        <label class="control-label">Email</label>
+        <input type="text" class="form-control" id="venderEmail" ng-model="data.Email" ng-keyup="hitEnter($event)">      
+    </ng-form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" ng-click="cancel()">Cancel</button>
+    <button type="button" class="btn btn-default" ng-click="done()" ng-disabled="(nameDialog.$dirty && nameDialog.$invalid) || nameDialog.$pristine">Done</button>
+</div>

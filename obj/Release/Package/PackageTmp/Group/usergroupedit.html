@@ -1,0 +1,24 @@
+﻿<div class="modal-header">
+    <h4 class="modal-title">
+        <span class="glyphicon glyphicon-star"></span>
+        UserMaintenance
+    </h4>
+</div>
+<div class="modal-body">
+    <ng-form name="nameDialog" novalidate role="form">
+        <label class="control-label" for="userName">UserName</label>&nbsp; &nbsp; :  &nbsp; &nbsp;{{data.User.FirstName+''+data.User.LastName}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <!--<input type="text" class="" id="customValue" ng-disabled="true" value="{{data.User.FirstName+'.'+data.User.LastName}}" ng-keyup="hitEnter($event)" required>-->
+
+        <label class="control-label" for="groupName">GroupName:</label>
+        <!--<select ng-model="data.GroupId">
+            <option ng-repeat="list in groupLists | orderBy:'GroupName'" selected="{{data.GroupName}}" value="{{list.GroupId}}">{{list.GroupName}}</option>
+        </select>-->
+        <select ng-model="data.GroupId">
+            <option ng-repeat="list in groupLists | orderBy:'GroupName' " ng-selected="list.GroupName==data.Group.GroupName" value="{{list.GroupId}}">{{list.GroupName}}</option>
+        </select>
+    </ng-form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" ng-click="cancel()">Cancel</button>
+    <button type="button" class="btn btn-default" ng-click="done()" ng-disabled="(nameDialog.$dirty && nameDialog.$invalid) || nameDialog.$pristine">Done</button>
+</div>

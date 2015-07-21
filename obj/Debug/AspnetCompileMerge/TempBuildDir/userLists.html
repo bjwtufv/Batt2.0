@@ -1,0 +1,31 @@
+﻿<!--
+    User Account List
+-->
+<!--menu title-->
+<div ng-include="'Group/menutitle.html'"></div>
+<!--user account list-->
+<div class="row col-lg-5">
+    <table class="table table-striped table-hover text-primary">
+        <thead>
+            <tr class="">
+                <th>Owner Email</th>
+                <th><a class="btn btn-success btn-xs" ui-sref="user.detail({ id: 'new' })"><i class="glyphicon glyphicon-plus-sign"></i></a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="list in userLists.slice(startItem,endItem) | filter:{Active:true}">
+                <td>{{list.Email}}  </td>
+                <td>
+                    <a class="btn btn-info btn-xs" ui-sref="user.detail({ id: '{{list.UserId}}'})"><i class="glyphicon glyphicon-edit"></i></a>
+                    <button class="btn btn-danger btn-xs" ng-click="delete(list,$index)">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <pagination ng-show="userLists.length>perPage" total-items="userLists.length" ng-model="currentPage" max-size="maxSize" ng-change="pageChanged()" previous-text="&lsaquo;&lsaquo;" next-text="&rsaquo;&rsaquo;" items-per-page="perPage"></pagination>
+</div>
+
+
+

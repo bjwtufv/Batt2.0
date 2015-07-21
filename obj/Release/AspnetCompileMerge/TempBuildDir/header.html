@@ -1,0 +1,31 @@
+﻿<!--
+    header
+-->
+<div  ng-controller="userCtrl" class="noPrint">  
+    <ul class="nav">
+        <img src="Image/home_01.png" style="height:38px;width:80px; left:0px; margin-right:100px;margin-left:15px" />
+        <li ng-show="loginState.Permission.UserView">
+            <a ui-sref="usergroup">User</a>
+        </li>
+        <li ng-show="loginState.Permission.GroupView">
+            <a ui-sref="group">Group</a>
+        </li>
+        <li ng-show="loginState.PermissionName">
+            <a ui-sref="permission">Permission</a>
+        </li>
+        <li ng-show="loginState.Permission.PermissionView">
+            <a ui-sref="permissionset">Permission</a>
+        </li>
+        <li ng-show="loginState.Permission.VenderView">
+            <a ui-sref="vender">Vender</a>
+        </li>
+        <li ng-show="loginState.Permission.ProductView">
+            <a ui-sref="product">Product</a>
+        </li>
+        <li ng-show="loginState.Permission.OrderView">
+            <a ui-sref="order">Order</a>
+        </li>
+        <li class="right" ng-show="!loginState.state"><a ui-sref="login">Sign in</a></li>
+        <li class="right" ng-show="loginState.state"><a ng-click="logout()">Sign out</a></li>
+    </ul>
+</div>

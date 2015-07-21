@@ -1,0 +1,39 @@
+﻿<!--
+    Permission Name 
+-->
+<div>
+    <div ng-include="'Group/menutitle.html'"></div>
+    <!--permission name list-->
+    <table class="table table-striped table-hover text-primary" style="width:500px">
+        <thead>
+            <tr>
+                <td>
+                    <select ng-model="query">
+                        <option></option>
+                        <option ng-repeat="list in permissionLists | orderBy:'PermissionName'" ng-value="list.PermissionName">{{list.PermissionName}}</option>>
+                    </select>
+                </td>
+                <td>
+                    <button class="btn btn-success btn-xs" ng-click="save()"><i class="glyphicon glyphicon-plus-sign"></i></button>
+                </td>
+            </tr>
+            <tr class="">
+                <th ng-click="sort('PermissionName')">
+                    Permission Name
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="list in permissionLists | filter:query | orderBy:order:flag">
+                <td>{{list.PermissionName}}</td>
+                <td>
+                    <button class="btn btn-info btn-xs" ng-click="save(list.PermissionId)"><i class="glyphicon glyphicon-edit"></i></button>
+                    <button class="btn btn-danger btn-xs" ng-click="delete(list.PermissionId,$index)"><i class="glyphicon glyphicon-trash"></i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

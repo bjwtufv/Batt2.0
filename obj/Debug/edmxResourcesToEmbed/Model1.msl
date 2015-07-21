@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BattModelStoreContainer" CdmEntityContainer="BattEntities">
+    <EntitySetMapping Name="Group">
+      <EntityTypeMapping TypeName="BattModel.Group">
+        <MappingFragment StoreEntitySet="Group">
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupPermission">
+      <EntityTypeMapping TypeName="BattModel.GroupPermission">
+        <MappingFragment StoreEntitySet="GroupPermission">
+          <ScalarProperty Name="GroupPermissionId" ColumnName="GroupPermissionId" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="PermissionId" ColumnName="PermissionId" />
+          <ScalarProperty Name="Context" ColumnName="Context" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order">
+      <EntityTypeMapping TypeName="BattModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="ShipAddress" ColumnName="ShipAddress" />
+          <ScalarProperty Name="OrderTotal" ColumnName="OrderTotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order_Details">
+      <EntityTypeMapping TypeName="BattModel.Order_Details">
+        <MappingFragment StoreEntitySet="Order Details">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Permission">
+      <EntityTypeMapping TypeName="BattModel.Permission">
+        <MappingFragment StoreEntitySet="Permission">
+          <ScalarProperty Name="PermissionId" ColumnName="PermissionId" />
+          <ScalarProperty Name="PermissionName" ColumnName="PermissionName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="BattModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserGroup">
+      <EntityTypeMapping TypeName="BattModel.UserGroup">
+        <MappingFragment StoreEntitySet="UserGroup">
+          <ScalarProperty Name="UserGroupId" ColumnName="UserGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vender">
+      <EntityTypeMapping TypeName="BattModel.Vender">
+        <MappingFragment StoreEntitySet="Vender">
+          <ScalarProperty Name="VenderId" ColumnName="VenderId" />
+          <ScalarProperty Name="VenderName" ColumnName="VenderName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_UserGroup_Group" TypeName="BattModel.FK_UserGroup_Group" StoreEntitySet="UserGroup">
+      <EndProperty Name="Group">
+        <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+      </EndProperty>
+      <EndProperty Name="UserGroup">
+        <ScalarProperty Name="UserGroupId" ColumnName="UserGroupId" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="GroupId" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Order_User" TypeName="BattModel.FK_Order_User" StoreEntitySet="Order">
+      <EndProperty Name="User">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="Order">
+        <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="UserId" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Order_Vender" TypeName="BattModel.FK_Order_Vender" StoreEntitySet="Order">
+      <EndProperty Name="Vender">
+        <ScalarProperty Name="VenderId" ColumnName="VenderId" />
+      </EndProperty>
+      <EndProperty Name="Order">
+        <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="VenderId" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_UserGroup_User" TypeName="BattModel.FK_UserGroup_User" StoreEntitySet="UserGroup">
+      <EndProperty Name="User">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="UserGroup">
+        <ScalarProperty Name="UserGroupId" ColumnName="UserGroupId" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="UserId" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="BattModel.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="VenderId" ColumnName="VenderId" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="AcctNo" ColumnName="AcctNo" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Farasis" ColumnName="Farasis" />
+          <ScalarProperty Name="Dist" ColumnName="Dist" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

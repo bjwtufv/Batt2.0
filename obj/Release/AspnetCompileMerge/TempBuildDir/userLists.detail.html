@@ -1,0 +1,77 @@
+﻿<div class="title">
+    <h4 class="title">{{menuTitle}}</h4>
+</div>
+<div ng-form="UserForm">
+    <table style="border-top: 1px solid silver; border-bottom: 2px solid silver; width:100%">
+        <tr>
+            <td class="input-label1"><label class="required">Email Address : </label>
+            <td class="input-box1">
+                <!--<div ng-bind="userList.Email" ng-show="DisplayMode"></div>
+                <div ng-show="EditMode">-->
+                    <input type="email" name="Email" class="form-control " ng-model="userList.Email" required />
+                <!--</div>-->
+            </td>
+            <td class="input-box2">
+                <span style="color:red" ng-show="UserForm.Email.$invalid && UserForm.Email.$dirty">Please enter a valid email address</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="input-label1" align="right"><label class="required">First Name : </label>
+            <td class="input-box1">
+                <!--<div ng-bind="userList.FirstName" ng-show="DisplayMode"></div>
+                <div ng-show="EditMode">-->
+                    <input type="text" name="FirstName" class="form-control" ng-model="userList.FirstName" required />
+                <!--</div>-->
+            </td>
+            <td class="input-box2">
+                <span style="color:red" ng-show="UserForm.FirstName.$error.required && UserForm.FirstName.$dirty">Required</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="input-label1" align="right"><label class="required">Last Name : </label>
+            <td class="input-box1">
+                <!--<div ng-bind="userList.LastName" ng-show="DisplayMode"></div>
+                <div ng-show="EditMode">-->
+                    <input type="text" name="LastName" class="form-control" ng-model="userList.LastName" required />
+                <!--</div>-->
+            </td>
+            <td class="input-box2">
+                <span style="color:red" ng-show="UserForm.LastName.$error.required && UserForm.LastName.$dirty">Required</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="input-label1" align="right"><label class="required">Password : </label>
+            <td class="input-box1">
+                <!--<div ng-bind="userlist.password" ng-show="DisplayMode"></div>
+                <div ng-show="EditMode">-->
+                    <input type="password" name="Password" class="form-control" ng-model="userList.Password" required />
+                <!--</div>-->
+            </td>
+            <td class="input-box2">
+                <span style="color:red" ng-show="UserForm.Password.$error.required && UserForm.Password.$dirty">Required</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="input-label1" align="right"><label class="required">ConfirmPassword : </label>
+            <td class="input-box1">
+                <!--<div ng-bind="" ng-show="DisplayMode"></div>
+                <div ng-show="EditMode">-->
+                    <input type="password" name="ConfirmPassword" class="form-control" ng-model="ConfirmPassword" required />
+                <!--</div>-->
+            </td>
+            <td class="input-box2">
+                <span style="color:red" ng-show="userList.Password!=ConfirmPassword && UserForm.ConfirmPassword.$dirty">Must match the previous value.</span>
+            </td>
+        </tr>
+    </table>
+
+    <span ng-show="ShowCreateButton"><button class="btn btn-success btn-xs" ng-click="CreateUser()"><i class="glyphicon glyphicon-plus-sign"></i></button></span>
+    <span ng-show="ShowEditButton">  <button class="btn btn-info btn-xs" ng-click="EditUser()"><i class="glyphicon glyphicon-edit"></i></button></span>
+    <span ng-show="ShowSaveButton"><button class="btn btn-success btn-xs" ng-click="SaveUser()" ng-disabled="UserForm.$invalid || userList.Password!=ConfirmPassword" type="submit"><i class="glyphicon glyphicon-ok"></i></button></span>
+    <span ng-show="ShowCancelButton"><button class="btn btn-danger btn-xs" ng-click="CancelChange()"><i class="glyphicon glyphicon-remove"></i></button></span>
+    <span ng-show="ShowDeleteButton"><button class="btn btn-primary btn-xs" ng-click="DeleteUser()">Cancel</button></span>
+</div>
+
+

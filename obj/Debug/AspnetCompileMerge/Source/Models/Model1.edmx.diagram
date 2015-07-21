@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="889cc63ff55f4c419535408e09b96a22" Name="Diagram1">
+        <EntityTypeShape EntityType="BattModel.Group" Width="1.5" PointX="6.5" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BattModel.OrderItem" Width="1.5" PointX="5.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BattModel.Permission" Width="1.5" PointX="6.875" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BattModel.Product" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BattModel.User" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BattModel.UserGroup" Width="1.5" PointX="4.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BattModel.Vender" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <AssociationConnector Association="BattModel.FK_UserGroup_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="BattModel.FK_Product_Vender" ManuallyRouted="false" />
+        <AssociationConnector Association="BattModel.FK_UserGroup_User" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="BattModel.Order_Details" Width="1.5" PointX="3.375" PointY="3.75" />
+        <EntityTypeShape EntityType="BattModel.Order" Width="1.5" PointX="6.875" PointY="0.5" />
+        <AssociationConnector Association="BattModel.FK_Order_User" />
+        <AssociationConnector Association="BattModel.FK_Order_Vender" />
+        <EntityTypeShape EntityType="BattModel.GroupPermission" Width="1.5" PointX="9.125" PointY="5" />
+        <AssociationConnector Association="BattModel.FK_GroupPermission_Group" />
+        <AssociationConnector Association="BattModel.FK_GroupPermission_Permission" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

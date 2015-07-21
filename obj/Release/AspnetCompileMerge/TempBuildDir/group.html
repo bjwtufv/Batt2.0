@@ -1,0 +1,41 @@
+﻿<!--
+    group
+-->
+<div ng-show="loginState.state && loginState.Permission.GroupView">
+    <!--menu title-->
+    <div ng-include="'Group/menutitle.html'"></div>
+    <!--group list-->
+    <table class="table table-striped table-hover text-primary" style="width:500px">
+        <thead>
+            <tr>
+                <td>
+                    <select ng-model="query">
+                        <option></option>
+                        <option ng-repeat="list in groupLists | orderBy:'GroupName'" ng-value="list.GroupName">{{list.GroupName}}</option>>
+                    </select>
+                </td>
+                <td>
+                    <button class="btn btn-success btn-xs" ng-click="save()" ng-disabled="!loginState.Permission.GroupAdd"><i class="glyphicon glyphicon-plus-sign"></i></button>
+                </td>
+            </tr>
+            <tr class="">
+                <th ng-click="sort('GroupName')">
+                    Group Name
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="list in groupLists | filter:query | orderBy:order:flag">
+                <td>{{list.GroupName}}</td>
+                <td>
+                    <button class="btn btn-info btn-xs" ng-click="save(list.GroupId)" ng-disabled="!loginState.Permission.GroupEdit"><i class="glyphicon glyphicon-edit"></i></button>
+                    <button class="btn btn-danger btn-xs" ng-click="delete(list.GroupId,$index)" ng-disabled="!loginState.Permission.GroupDele"><i class="glyphicon glyphicon-trash"></i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

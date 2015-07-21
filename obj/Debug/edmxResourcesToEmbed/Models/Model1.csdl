@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BattModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="GroupPermission">
+    <Key>
+      <PropertyRef Name="GroupPermissionId" />
+    </Key>
+    <Property Name="GroupPermissionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupId" Type="Int32" />
+    <Property Name="PermissionId" Type="Int32" />
+    <Property Name="Context" Type="Boolean" />
+    <NavigationProperty Name="Permission" Relationship="BattModel.FK_GroupPermission_Permission" FromRole="GroupPermission" ToRole="Permission" />
+    <NavigationProperty Name="Group" Relationship="BattModel.FK_GroupPermission_Group" FromRole="GroupPermission" ToRole="Group" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderDate" Type="DateTime" Precision="0" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="Fax" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="VenderId" Type="Int32" />
+    <Property Name="ShipAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="OrderTotal" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ApprovalDate" Type="DateTime" Precision="0" />
+    <Property Name="Approval" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="User" Relationship="BattModel.FK_Order_User" FromRole="Order" ToRole="User" />
+    <NavigationProperty Name="Vender" Relationship="BattModel.FK_Order_Vender" FromRole="Order" ToRole="Vender" />
+  </EntityType>
+  <EntityType Name="OrderItem">
+    <Key>
+      <PropertyRef Name="OrderItemId" />
+    </Key>
+    <Property Name="OrderItemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderId" Type="Int32" />
+    <Property Name="Qty" Type="Int32" />
+    <Property Name="Dist" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Farasis" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="AcctNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Dist" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Farasis" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="AcctNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="VenderId" Type="Int32" />
+    <NavigationProperty Name="Vender" Relationship="BattModel.FK_Product_Vender" FromRole="Product" ToRole="Vender" />
+  </EntityType>
+  <EntityType Name="UserGroup">
+    <Key>
+      <PropertyRef Name="UserGroupId" />
+    </Key>
+    <Property Name="UserGroupId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="GroupId" Type="Int32" />
+    <NavigationProperty Name="Group" Relationship="BattModel.FK_UserGroup_Group" FromRole="UserGroup" ToRole="Group" />
+    <NavigationProperty Name="User" Relationship="BattModel.FK_UserGroup_User" FromRole="UserGroup" ToRole="User" />
+  </EntityType>
+  <EntityContainer Name="BattEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GroupPermission" EntityType="Self.GroupPermission" />
+    <EntitySet Name="Order" EntityType="Self.Order" />
+    <EntitySet Name="OrderItem" EntityType="Self.OrderItem" />
+    <EntitySet Name="Product" EntityType="Self.Product" />
+    <EntitySet Name="UserGroup" EntityType="Self.UserGroup" />
+    <EntitySet Name="Group" EntityType="BattModel.Group" />
+    <EntitySet Name="Order_Details" EntityType="BattModel.Order_Details" />
+    <EntitySet Name="Permission" EntityType="BattModel.Permission" />
+    <EntitySet Name="User" EntityType="BattModel.User" />
+    <EntitySet Name="Vender" EntityType="BattModel.Vender" />
+    <AssociationSet Name="FK_UserGroup_Group" Association="BattModel.FK_UserGroup_Group">
+      <End Role="Group" EntitySet="Group" />
+      <End Role="UserGroup" EntitySet="UserGroup" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GroupPermission_Permission" Association="BattModel.FK_GroupPermission_Permission">
+      <End Role="Permission" EntitySet="Permission" />
+      <End Role="GroupPermission" EntitySet="GroupPermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_User" Association="BattModel.FK_Order_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Vender" Association="BattModel.FK_Order_Vender">
+      <End Role="Vender" EntitySet="Vender" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Vender" Association="BattModel.FK_Product_Vender">
+      <End Role="Vender" EntitySet="Vender" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserGroup_User" Association="BattModel.FK_UserGroup_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserGroup" EntitySet="UserGroup" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GroupPermission_Group" Association="BattModel.FK_GroupPermission_Group">
+      <End Role="Group" EntitySet="Group" />
+      <End Role="GroupPermission" EntitySet="GroupPermission" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="GroupId" />
+    </Key>
+    <Property Name="GroupId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Order_Details">
+    <Key>
+      <PropertyRef Name="OrderId" />
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int16" />
+  </EntityType>
+  <EntityType Name="Permission">
+    <Key>
+      <PropertyRef Name="PermissionId" />
+    </Key>
+    <Property Name="PermissionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PermissionName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Active" Type="Boolean" DefaultValue="True" />
+  </EntityType>
+  <EntityType Name="Vender">
+    <Key>
+      <PropertyRef Name="VenderId" />
+    </Key>
+    <Property Name="VenderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VenderName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Contact" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Fax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_UserGroup_Group">
+    <End Type="BattModel.Group" Role="Group" Multiplicity="0..1" />
+    <End Type="BattModel.UserGroup" Role="UserGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Group">
+        <PropertyRef Name="GroupId" />
+      </Principal>
+      <Dependent Role="UserGroup">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GroupPermission_Permission">
+    <End Type="BattModel.Permission" Role="Permission" Multiplicity="0..1" />
+    <End Type="BattModel.GroupPermission" Role="GroupPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Permission">
+        <PropertyRef Name="PermissionId" />
+      </Principal>
+      <Dependent Role="GroupPermission">
+        <PropertyRef Name="PermissionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_User">
+    <End Type="BattModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="BattModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Vender">
+    <End Type="BattModel.Vender" Role="Vender" Multiplicity="0..1" />
+    <End Type="BattModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vender">
+        <PropertyRef Name="VenderId" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="VenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Vender">
+    <End Type="BattModel.Vender" Role="Vender" Multiplicity="0..1" />
+    <End Type="BattModel.Product" Role="Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vender">
+        <PropertyRef Name="VenderId" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="VenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserGroup_User">
+    <End Type="BattModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="BattModel.UserGroup" Role="UserGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserGroup">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GroupPermission_Group">
+    <End Type="BattModel.Group" Role="Group" Multiplicity="0..1" />
+    <End Type="BattModel.GroupPermission" Role="GroupPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Group">
+        <PropertyRef Name="GroupId" />
+      </Principal>
+      <Dependent Role="GroupPermission">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

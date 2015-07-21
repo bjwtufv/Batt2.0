@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>d:\farasis</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>07/03/2015 11:02:30</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>07/03/2015 11:02:30</publishTime>
+    </File>
+    <File Include="bin/Batt.dll">
+      <publishTime>07/03/2015 11:02:26</publishTime>
+    </File>
+    <File Include="bin/Batt.pdb">
+      <publishTime>06/19/2015 09:59:36</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>06/05/2015 15:46:20</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>06/05/2015 15:46:20</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>11/18/2013 05:51:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/08/2013 15:15:08</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/05/2015 15:46:28</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>06/05/2015 15:47:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>06/05/2015 15:46:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>06/05/2015 15:47:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>06/05/2015 15:47:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>06/05/2015 15:46:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>06/05/2015 15:46:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>06/05/2015 15:46:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>06/05/2015 15:46:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>06/05/2015 15:46:44</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/EntityFramework.resources.dll">
+      <publishTime>06/05/2015 15:46:26</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/EntityFramework.SqlServer.resources.dll">
+      <publishTime>06/05/2015 15:46:26</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Net.Http.Formatting.resources.dll">
+      <publishTime>06/05/2015 15:47:12</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
+      <publishTime>06/05/2015 15:47:02</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Http.resources.dll">
+      <publishTime>06/05/2015 15:47:12</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Http.WebHost.resources.dll">
+      <publishTime>06/05/2015 15:47:12</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>06/05/2015 15:47:02</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>06/05/2015 15:47:02</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>06/05/2015 15:47:02</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>06/05/2015 15:47:02</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.resources.dll">
+      <publishTime>06/05/2015 15:47:02</publishTime>
+    </File>
+    <File Include="Css/css/ace-switch.css">
+      <publishTime>06/18/2015 00:08:28</publishTime>
+    </File>
+    <File Include="Css/css/bootstrap-theme.css">
+      <publishTime>05/07/2015 13:38:38</publishTime>
+    </File>
+    <File Include="Css/css/bootstrap-theme.css.map">
+      <publishTime>05/07/2015 13:38:38</publishTime>
+    </File>
+    <File Include="Css/css/bootstrap-theme.min.css">
+      <publishTime>05/07/2015 13:38:38</publishTime>
+    </File>
+    <File Include="Css/css/bootstrap.css">
+      <publishTime>05/07/2015 13:38:38</publishTime>
+    </File>
+    <File Include="Css/css/bootstrap.css.map">
+      <publishTime>05/07/2015 13:38:38</publishTime>
+    </File>
+    <File Include="Css/css/bootstrap.min.css">
+      <publishTime>05/07/2015 13:38:38</publishTime>
+    </File>
+    <File Include="Css/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/07/2015 13:38:38</publishTime>
+    </File>
+    <File Include="Css/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/07/2015 13:38:38</publishTime>
+    </File>
+    <File Include="Css/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/07/2015 13:38:38</publishTime>
+    </File>
+    <File Include="Css/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/07/2015 13:38:38</publishTime>
+    </File>
+    <File Include="Css/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>05/07/2015 13:38:38</publishTime>
+    </File>
+    <File Include="Css/js/bootstrap.js">
+      <publishTime>05/07/2015 13:38:38</publishTime>
+    </File>
+    <File Include="Css/js/bootstrap.min.js">
+      <publishTime>05/07/2015 13:38:38</publishTime>
+    </File>
+    <File Include="Css/js/npm.js">
+      <publishTime>05/07/2015 13:38:38</publishTime>
+    </File>
+    <File Include="Css/localStyles.css">
+      <publishTime>06/15/2015 01:34:56</publishTime>
+    </File>
+    <File Include="Css/login.css">
+      <publishTime>05/23/2015 01:43:02</publishTime>
+    </File>
+    <File Include="Css/StylePrint.css">
+      <publishTime>06/17/2015 15:07:06</publishTime>
+    </File>
+    <File Include="footer.html">
+      <publishTime>05/06/2015 07:30:44</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/13/2015 19:08:06</publishTime>
+    </File>
+    <File Include="group.html">
+      <publishTime>06/18/2015 12:11:44</publishTime>
+    </File>
+    <File Include="Group/group.detail.html">
+      <publishTime>05/08/2015 01:26:36</publishTime>
+    </File>
+    <File Include="Group/menutitle.html">
+      <publishTime>06/18/2015 12:04:32</publishTime>
+    </File>
+    <File Include="Group/OrderItem.edit.html">
+      <publishTime>06/08/2015 14:32:06</publishTime>
+    </File>
+    <File Include="Group/permission.edit.html">
+      <publishTime>05/26/2015 09:20:20</publishTime>
+    </File>
+    <File Include="Group/product.edit.html">
+      <publishTime>06/07/2015 23:59:50</publishTime>
+    </File>
+    <File Include="Group/usergroupedit.html">
+      <publishTime>06/02/2015 05:53:36</publishTime>
+    </File>
+    <File Include="Group/vender.edit.html">
+      <publishTime>05/29/2015 08:33:30</publishTime>
+    </File>
+    <File Include="header.html">
+      <publishTime>06/19/2015 01:33:32</publishTime>
+    </File>
+    <File Include="Image/avatar_2x.png">
+      <publishTime>04/18/2015 06:17:30</publishTime>
+    </File>
+    <File Include="Image/head1.jpg">
+      <publishTime>04/18/2015 10:20:30</publishTime>
+    </File>
+    <File Include="Image/home.jpg">
+      <publishTime>04/18/2015 06:17:30</publishTime>
+    </File>
+    <File Include="Image/home1.jpg">
+      <publishTime>04/18/2015 07:46:22</publishTime>
+    </File>
+    <File Include="Image/home_01.png">
+      <publishTime>06/07/2015 12:23:02</publishTime>
+    </File>
+    <File Include="Image/lap.png">
+      <publishTime>06/04/2015 09:35:18</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>06/17/2015 15:59:34</publishTime>
+    </File>
+    <File Include="Jscript/angular-resource.js">
+      <publishTime>04/11/2015 19:19:08</publishTime>
+    </File>
+    <File Include="Jscript/angular-sanitize.js">
+      <publishTime>05/07/2015 13:37:22</publishTime>
+    </File>
+    <File Include="Jscript/angular-sanitize.min.js">
+      <publishTime>05/07/2015 13:37:22</publishTime>
+    </File>
+    <File Include="Jscript/angular-translate.js">
+      <publishTime>05/07/2015 13:37:50</publishTime>
+    </File>
+    <File Include="Jscript/angular-translate.min.js">
+      <publishTime>05/07/2015 13:37:50</publishTime>
+    </File>
+    <File Include="Jscript/angular-ui-router.min.js">
+      <publishTime>04/11/2015 19:19:08</publishTime>
+    </File>
+    <File Include="Jscript/angular.js">
+      <publishTime>05/07/2015 13:36:30</publishTime>
+    </File>
+    <File Include="Jscript/angular.min.js">
+      <publishTime>05/07/2015 13:36:30</publishTime>
+    </File>
+    <File Include="Jscript/app.js">
+      <publishTime>06/29/2015 21:32:44</publishTime>
+    </File>
+    <File Include="Jscript/dialogs.js">
+      <publishTime>05/07/2015 15:07:26</publishTime>
+    </File>
+    <File Include="Jscript/jBootstrapPage.js">
+      <publishTime>05/16/2015 03:53:24</publishTime>
+    </File>
+    <File Include="Jscript/jquery.js">
+      <publishTime>06/14/2015 23:22:34</publishTime>
+    </File>
+    <File Include="Jscript/jquery.min.js">
+      <publishTime>05/07/2015 13:39:14</publishTime>
+    </File>
+    <File Include="Jscript/jquery.min.map">
+      <publishTime>05/07/2015 13:39:14</publishTime>
+    </File>
+    <File Include="Jscript/main.js">
+      <publishTime>05/17/2015 01:05:24</publishTime>
+    </File>
+    <File Include="Jscript/ng-Grid.js">
+      <publishTime>05/23/2015 01:55:18</publishTime>
+    </File>
+    <File Include="Jscript/ui-bootstrap-tpls.js">
+      <publishTime>05/07/2015 13:37:00</publishTime>
+    </File>
+    <File Include="Jscript/ui-bootstrap-tpls.min.js">
+      <publishTime>05/07/2015 13:37:00</publishTime>
+    </File>
+    <File Include="Jscript/ui-bootstrap.js">
+      <publishTime>05/07/2015 19:11:16</publishTime>
+    </File>
+    <File Include="Jscript/ui-bootstrap.min.js">
+      <publishTime>05/07/2015 13:37:00</publishTime>
+    </File>
+    <File Include="login.html">
+      <publishTime>06/16/2015 16:20:04</publishTime>
+    </File>
+    <File Include="Models/Model1.edmx.diagram">
+      <publishTime>06/19/2015 10:34:00</publishTime>
+    </File>
+    <File Include="order.detail.html">
+      <publishTime>06/18/2015 04:18:52</publishTime>
+    </File>
+    <File Include="order.edit.html">
+      <publishTime>06/18/2015 12:18:20</publishTime>
+    </File>
+    <File Include="order.html">
+      <publishTime>06/19/2015 01:33:34</publishTime>
+    </File>
+    <File Include="order.new.html">
+      <publishTime>06/19/2015 01:33:34</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/05/2015 15:47:12</publishTime>
+    </File>
+    <File Include="permission.html">
+      <publishTime>06/18/2015 12:14:20</publishTime>
+    </File>
+    <File Include="permissionset.html">
+      <publishTime>06/18/2015 12:14:26</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>07/03/2015 11:02:26</publishTime>
+    </File>
+    <File Include="product.html">
+      <publishTime>06/19/2015 01:33:30</publishTime>
+    </File>
+    <File Include="test.html">
+      <publishTime>05/30/2015 11:36:48</publishTime>
+    </File>
+    <File Include="usergroup.html">
+      <publishTime>07/03/2015 10:31:26</publishTime>
+    </File>
+    <File Include="userLists.detail.html">
+      <publishTime>06/18/2015 12:15:28</publishTime>
+    </File>
+    <File Include="userLists.html">
+      <publishTime>06/18/2015 12:18:10</publishTime>
+    </File>
+    <File Include="vender.html">
+      <publishTime>07/03/2015 10:39:50</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>04/11/2015 18:32:08</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/29/2015 15:19:12</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

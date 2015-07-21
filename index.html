@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-language" content="en" />
+    <link rel="icon" href="Image/lap.png" />
+    <title>Farasis</title>
+    <link href="/Css/css/bootstrap.css" rel="stylesheet" />
+    <link href="/Css/localStyles.css" rel="stylesheet" />
+    <link href="/Css/StylePrint.css" rel="stylesheet" media="print" />
+    <link href="Css/css/ace-switch.css" rel="stylesheet" />
+</head>
+<body ng-app="farasisApp">
+    <div class="container">
+        <div>
+            <!--Alert Message Show Box-->
+            <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)" style="top:750px;position:absolute;width:1140px" ng-bind="alert.msg"></alert>
+            <!--Header-->
+            <div class="right" ng-include="'header.html'"></div>
+            <!--Main-->
+            <div ui-view=""></div>
+        </div>
+    </div>
+    <!--<script src="/Jscript/jquery.js"></script>-->
+   
+    <script src="/Jscript/angular.js"></script>
+    <script src="/Jscript/angular-resource.js"></script>
+    <script src="/Jscript/ui-bootstrap.js"></script>
+    <script src="/Jscript/ui-bootstrap-tpls.js"></script>
+    <script src="/Jscript/angular-sanitize.js"></script>
+    <script src="/Jscript/angular-translate.js"></script>
+    <script src="/Css/js/bootstrap.js"></script>
+    <script src="/Jscript/dialogs.js"></script>
+    <script src="/Jscript/angular-ui-router.min.js"></script>
+    <script src="/Jscript/app.js"></script>
+   
+</body>
+</html>
